@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Juan Manuel Jerez Baraona</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mi</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Juan Manuel Jerez Baraona</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre mi</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+                <li><a href="#proyects" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/foto-perfil.png" alt="Foto de perfil de Juan Manuel Jerez Baraona">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hola, soy</p>
+            <h1 class="title">Juan Manuel Jerez Baraona</h1>
+            <p class="section__text__p2">Desarrollador Frontend</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/CV-Juan-Manuel-Jerez-Baraona.pdf')">Descargar CV</button>
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'">Contacto</button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Mi perfil de LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/juan-manuel-jerez-baraona-b54486274/'">
+                <img src="./assets/github.png" alt="Mi perfil de GitHub" class="icon" onclick="location.href='https://github.com/JuanManuelJerezBaraona'">
+            </div>
+        </div>
+        
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Más información</p>
+        <h1 class="title">Sobre mi</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/foto-sobremi.png" 
+                    alt="Foto de perfil" 
+                    class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="ícono de experiencia" 
+                            class="icon">
+                        <h3>Experiencia</h3>
+                        <p>+1 Año <br>Desarrollador Frontend</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="ícono de educación" 
+                            class="icon">
+                        <h3>Educación</h3>
+                        <p>Desafío Latam <br>Desarrollador FullStack</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores ratione adipisci quod nemo enim architecto, nihil recusandae est rem odio laborum quisquam repellendus, amet repudiandae, corporis soluta totam possimus!</p>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="ícono de flecha" 
+            class="icon arrow" 
+            onClick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explora mi</p>
+        <h1 class="title">Experiencia</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Habilidades</h2>
+                    <div class="article-container">
+                        <article>
+                            <div>
+                            <img 
+                                src="./assets/html.png" 
+                                alt="ícono de experiencia"
+                                class="icon">
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                            <img 
+                                src="./assets/css.png" 
+                                alt="ícono de experiencia"
+                                class="icon">
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                            <img 
+                                src="./assets/bootstrap.png" 
+                                alt="ícono de experiencia"
+                                class="icon">
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                            <img 
+                                src="./assets/tailwind.png" 
+                                alt="ícono de experiencia"
+                                class="icon">
+                                <h3>Tailwind</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                            <img 
+                                src="./assets/javascript.png" 
+                                alt="ícono de experiencia"
+                                class="icon">
+                            
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                            <img 
+                                src="./assets/react.png" 
+                                alt="ícono de experiencia"
+                                class="icon">
+                            
+                                <h3>React</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                            <img 
+                                src="./assets/react-native.png" 
+                                alt="ícono de experiencia"
+                                class="icon">
+                            
+                                <h3>React Native</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                            <img 
+                                src="./assets/git.png" 
+                                alt="ícono de experiencia"
+                                class="icon">
+                            
+                                <h3>Git</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="ícono de flecha" 
+            class="icon arrow" 
+            onClick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Mira mis</p>
+        <h1 class="title">Proyectos</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="./assets/project-1.png" 
+                        alt="Proyecto 1"
+                        class="project-img">
+                </div>
+                <h2 class="experience-sub-title proyect-title">Proyecto Uno</h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href=''">
+                        Github
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href=''">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="./assets/project-2.png" 
+                        alt="Proyecto 2"
+                        class="project-img">
+                </div>
+                <h2 class="experience-sub-title proyect-title">Proyecto Dos</h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href=''">
+                        Github
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href=''">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="./assets/project-3.png" 
+                        alt="Proyecto 3"
+                        class="project-img">
+                </div>
+                <h2 class="experience-sub-title proyect-title">Proyecto Tres</h2>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href=''">
+                        Github
+                    </button>
+                    <button 
+                        class="btn btn-color-2 project-btn" 
+                        onclick="location.href=''">
+                        Ver más
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="ícono de flecha" 
+            class="icon arrow" 
+            onClick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Ponte en contacto</p>
+        <h1 class="title">Contáctame</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/email.png" 
+                    alt="ícono de email"
+                    class="icon contact-icon email-icon">
+                <p><a href="mailto:jjerezbaraona@gmail.com">jjerezbaraona@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="ícono de LinkedIn"
+                    class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/juan-manuel-jerez-baraona-b54486274/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Juan Manuel Jerez Baraona. Todos los derechos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
