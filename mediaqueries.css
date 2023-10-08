@@ -34,7 +34,7 @@
         display: block;
     }
     #about {
-        margin-top: 3rem;
+        margin-top: 7rem;
     }
     .arrow {
         display: none;
@@ -56,7 +56,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 756px) {
     #about {
         margin-top: 5rem;
     }
@@ -66,7 +66,7 @@
     }
     #profile {
         height: 83vh;
-        margin-bottom: 0;
+        margin-bottom: 8rem;
     }
     article {
         font-size: 1rem;
@@ -111,5 +111,11 @@
     }
     .text-container {
         text-align: justify;
+    }
+}
+
+@media screen and (min-width: 503px) {
+    #profile {
+        margin-bottom: 4rem;
     }
 }
