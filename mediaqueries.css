@@ -56,9 +56,9 @@
     }
 }
 
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 768px) {
     #about {
-        margin-top: 5rem;
+        padding-top: 0;
     }
     #contact,
     footer {
@@ -66,7 +66,6 @@
     }
     #profile {
         height: 83vh;
-        margin-bottom: 8rem;
     }
     article {
         font-size: 1rem;
@@ -115,7 +114,7 @@
 }
 
 @media screen and (min-width: 503px) {
-    #profile {
-        margin-bottom: 4rem;
+    #about {
+        margin-top: 0;
     }
 }
