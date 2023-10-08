@@ -26,6 +26,57 @@ a,
     transition: all 300ms ease;
 }
 
+/* AVATAR */
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.avatar {
+    box-sizing: border-box;
+	border: 5px white solid;
+    border-radius: 50%;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+/* EFECTO SCROLLING */
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
 /* DESKTOP */
 
 nav,
@@ -102,6 +153,7 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    z-index: 2; /* Asegura que el menú esté por encima de otros elementos */
 }
 
 .menu-links a {
@@ -167,6 +219,8 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    position: relative; /* Añade posición relativa para gestionar z-index */
+    z-index: 1; /* Asegura que la imagen de perfil esté por debajo del menú */
 }
 
 .section__pic-container {
@@ -174,30 +228,6 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
-}
-
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-}
-
-.avatar {
-    box-sizing: border-box;
-	border: 5px white solid;
-    border-radius: 50%;
-    transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-	img { width: 100%; height: auto; }
 }
 
 .section__text {
@@ -461,29 +491,4 @@ footer {
 
 footer p {
     text-align: center;
-}
-
-/* EFECTO SCROLLING */
-
-@keyframes show {
-    from {
-        opacity: 0;
-        scale: 25%;
-    }
-
-    to {
-        opacity: 1;
-        scale: 100%;
-    }
-}
-
-img {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-
-    animation-timeline: --image;
-    animation-name: show;
-
-    animation-range: entry 25% cover 30%;
-    animation-fill-mode: both;
 }
