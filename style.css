@@ -326,6 +326,7 @@ section {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -370,6 +371,11 @@ article .icon {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
+    transition: all 300ms ease;
+}
+
+.project-img:hover {
+    transform: scale(1.15);
 }
 
 .project-title {
