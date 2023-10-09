@@ -11,7 +11,6 @@
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
-        margin-bottom: 6rem;
     }
     .about-containers {
         flex-wrap: wrap;
@@ -33,6 +32,9 @@
     .section-container {
         display: block;
     }
+    #profile {
+        height: 83vh;
+    }
     #about {
         margin-top: 7rem;
     }
@@ -47,8 +49,8 @@
         margin: 0 5%;
     }
     .section__pic-container {
-        width: 275px;
-        height: 275px;
+        width: 250px;
+        height: 250px;
         margin: 0 auto 2rem;
     }
     .about-containers{
@@ -63,9 +65,10 @@
     #contact,
     footer {
         height: 40vh;
+        margin-top: 4rem;
     }
     #profile {
-        height: 83vh;
+        height: 80vh;
     }
     article {
         font-size: 1rem;
@@ -105,7 +108,7 @@
     }
     .section__pic-container {
         width: auto;
-        height: 46vh;
+        height: 42vh;
         justify-content: center;
     }
     .section__text__p2 {
@@ -119,8 +122,8 @@
     }
 }
 
-@media screen and (min-width: 503px) {
+@media screen and (max-width: 600px) {
     #about {
-        margin-top: 0;
+        margin-top: 10rem;
     }
 }
